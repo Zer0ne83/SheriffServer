@@ -1,0 +1,35 @@
+POST http://zer0ne-server:6969/users/add HTTP/1.1
+content-type: application/json
+
+{"id":null,"email":"555owenlenegan@gmail.com","password":"lotto12","dp_token":"aaa","dp_refresh":"bbb","dp_expires":123,"dp_domain":"meowcats.com","fcm_token":"ddd","fb_uid":"eee","app_uuk":"fff","app_prefs":true,"app_dbbu":false,"modified":null}
+###
+POST http://zer0ne-server:6969/ HTTP/1.1
+content-type: application/javascript
+
+{
+  meow:"cats";
+}
+
+###
+@hostname = sheriff.zer0ne.dev
+@port = 6969
+@host = {{hostname}}:{{port}}
+@contentType = application/json
+POST http://{{host}}/sched/schedlist HTTP/1.1
+content-type: {{contentType}}
+
+{
+  "zer0ne":"meowcats123",
+  "email": "owenlenegan@gmail.com"
+}
+
+###
+
+POST http://{{host}}/schedule/get HTTP/1.1
+content-type: {{contentType}}
+
+{
+  "jobId":"meow"
+}
+
+###

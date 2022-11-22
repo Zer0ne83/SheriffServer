@@ -1,0 +1,19 @@
+//////////////////////////////////////////////////
+///// IMPORTS
+//////////////////////////////////////////////////
+import {Request,Response} from 'express';
+import {logger} from '../logger';
+//////////////////////////////////////////////////
+export async function baseController(req:Request,res:Response):Promise<Response> {
+  logger.info('Request ['+req.method+'] > Route [base] > Endpoint [/]');
+  return res.json('🛡️Sheriff-Admin Server🛡️ >>> Are you lost, bro? 🤨');
+}
+//////////////////////////////////////////////////
+export async function test(req:Request,res:Response):Promise<Response> {
+  if(req.headers.zer0ne==='meowcats123'){
+    return res.status(200).send();
+  }else{return res.status(401).send()}
+}
+//////////////////////////////////////////////////
+//////////////////////////////////////////////////
+//////////////////////////////////////////////////

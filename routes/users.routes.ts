@@ -1,0 +1,20 @@
+//////////////////////////////////////////////////
+///// IMPORTS
+//////////////////////////////////////////////////
+import {Router} from 'express';
+import {getSingleAppUser,getAllAppUsers,addAppUser,updateAppUser,deleteAppUser,updateDPToken,updateFCMToken} from '../controllers/users.controller';
+//////////////////////////////////////////////////
+const router:Router=Router();
+//////////////////////////////////////////////////
+router.route('/single').get(getSingleAppUser);
+router.route('/all').get(getAllAppUsers);
+router.route('/add').post(addAppUser);
+router.route('/update').put(updateAppUser);
+router.route('/dptoken').put(updateDPToken);
+router.route('/fcmtoken').put(updateFCMToken);
+router.route('/delete').delete(deleteAppUser);
+//////////////////////////////////////////////////
+export const usersRoutes:Router=router;
+//////////////////////////////////////////////////
+//////////////////////////////////////////////////
+//////////////////////////////////////////////////

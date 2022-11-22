@@ -1,0 +1,13 @@
+{ 
+  project_number:'806779609016',
+firebase_url:'https://sherifffb-90311-default-rtdb.asia-southeast1.firebasedatabase.app',
+project_id:'sherifffb-90311',
+storage_bucket:'sherifffb-90311.appspot.com',
+mobilesdk_app_id:'1:806779609016:android:cb5b9134b3b8a47b20f94d',
+package_name:'dev.zer0ne.sheriff',
+oauth_client_id:'806779609016-haj716q28v6s6gnt0dv275ej5tenoh01.apps.googleusercontent.com',
+oauth_client_type:3,
+api_current_key:'AIzaSyA7Se0R6It-AvRDsGU6CStmFnaPag9I4FY'
+other_oauth_client_id:'117477416202308597904',
+other_oauth_client_type:3
+}
